@@ -32,8 +32,29 @@
             <ion-input type="text" name="api" formControlName="api" [(ngModel)]="my_token"></ion-input>
           </ion-item>
         </ion-col>
+        <ion-col width-20 class="button-container">
+          <button (click)="scan()" type="button">
+            <ion-icon name="qr-scanner"></ion-icon>
+          </button>
+        </ion-col>
       </ion-row>
     </ion-grid>
+    <div formGroupName="basic">
+      <ion-item>
+        <ion-label>{{ 'AUTH.BASIC' | translate }}</ion-label>
+        <ion-checkbox formControlName="enabled"></ion-checkbox>
+      </ion-item>
+    
+      <ion-item *ngIf="newServer.value.basic.enabled">
+        <ion-label stacked>{{ 'AUTH.USERNAME' | translate }}</ion-label>
+        <ion-input formControlName="username" type="text" placeholder="user"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="newServer.value.basic.enabled">
+        <ion-label stacked>{{ 'AUTH.PASSWORD' | translate }}</ion-label>
+        <ion-input formControlName="password" type="text" placeholder="password"></ion-input>
+      </ion-item>
+    </div>
+
     <button ion-button full type="submit" [disabled]="!newServer.valid">{{ 'GENERIC.SAVE' | translate }}</button>
   </form>
 </ion-content>
