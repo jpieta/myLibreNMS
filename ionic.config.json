@@ -1,6 +1,5 @@
 {
   "name": "MyLibreNMS",
-  "app_id": "",
   "integrations": {
     "cordova": {}
   },
