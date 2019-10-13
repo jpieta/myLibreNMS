@@ -80,7 +80,7 @@ export class Dashboard {
         this.api.getRequest('/system').subscribe((response) => {
             if (response.status == 'error') {
                 let warning = this.toastCtrl.create({
-                    message: "Your LibreNMS server may be out of date, this could cause the application to crash. Be warned",
+                    message: "AIS NMS is updating, please wait.",
                     duration: 5000
                 });
                 warning.present();

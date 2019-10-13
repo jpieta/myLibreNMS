@@ -1,6 +1,6 @@
 {
   "name": "AIS NMS",
-  "author": "Paul Heinrichs",
+  "author": "Jeff Pieta",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
@@ -61,7 +61,7 @@
     "ionic": "3.20.0",
     "typescript": "2.4.2"
   },
-  "description": "MyLibreNMS: A LibreNMS utility app",
+  "description": "AIS NMS Mobile App",
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",

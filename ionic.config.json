@@ -1,5 +1,5 @@
 {
-  "name": "MyLibreNMS",
+  "name": "AIS NMS",
   "integrations": {
     "cordova": {}
   },
